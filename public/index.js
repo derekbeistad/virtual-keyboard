@@ -17,7 +17,6 @@ letterKeys.forEach((key) =>
   key.addEventListener("click", () => {
     paper.value += key.innerText;
     chars.push(key.innerText);
-    console.log(chars);
   })
 );
 
@@ -32,10 +31,8 @@ numKeys.forEach((key) =>
 // Setup delete key
 deleteKeys.forEach((deleteKey) =>
   deleteKey.addEventListener("click", () => {
-    console.log("DELETE");
     chars.pop();
     paper.value = chars.join("");
-    console.log(chars);
   })
 );
 
