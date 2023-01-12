@@ -1,0 +1,125 @@
+/* Main */
+:root {
+    --clr-light: #E8EDDF;
+    --clr-dark: #242423;
+    --clr-accent: #F5CB5C;
+    --clr-semidark: #333533;
+    --clr-semilight: #EBE6C5;
+  
+    --ff-secondary: 'Cutive Mono', monospace; 
+    --ff-primary: 'Ubuntu', sans-serif;
+  }
+
+* {
+    background-color: var(--clr-dark);
+    box-sizing: border-box;
+    color: var(--clr-semilight);
+    font-family: var(--ff-primary);
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    text-align: center;
+}
+
+/* hidden keyboard */
+.hidden-keyboard {
+    display: none;
+}
+
+/* keys */
+button {
+    background-color: var(--clr-semilight);
+    border: none;
+    border-radius: 7px;
+    color: var(--clr-semidark);
+    font-size: 2rem;
+    height: 50px;
+    margin: 5px;
+    vertical-align: middle;
+    width: 50px;
+}
+
+button:hover {
+    box-shadow: inset 2px 1px 15px var(--clr-accent);
+    cursor: pointer;
+}
+
+.space-btn {
+    width: 20vw;
+}
+
+.special-btn {
+    font-size: 1rem;
+    width: 100px;
+}
+
+.first-btn {
+    margin-left: 0;
+}
+
+.last-btn {
+    margin-right: 0;
+}
+
+/* Text area */
+#paper {
+    background-color: var(--clr-semidark);
+    border: 1px solid var(--clr-semilight);
+    border-radius: 10px;
+    font-size: 1.25rem;
+    height: 200px;
+    padding: .5rem;
+    resize: none;
+    width: 100%;
+}
+
+/* transforms */
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Media Changes */
+@media (max-width: 900px) {
+    button {
+        font-size: 1.75rem;
+        height: 45px;
+        width: 45px;
+    }
+
+    .special-btn {
+        width: 90px;
+    }
+}
+
+@media (max-width: 750px) {
+    button {
+        font-size: 1.5rem;
+        height: 40px;
+        margin: 3px;
+        width: 40px;
+    }
+
+    .special-btn {
+        width: 80px;
+    }
+}
+
+@media (max-width: 700px) {
+    button {
+        font-size: 1rem;
+        height: 33px;
+        margin: 2px;
+        width: 33px;
+    }
+
+    .special-btn {
+        width: 66px;
+        font-size: .75rem;
+    }
+}
