@@ -88,12 +88,13 @@ button:hover {
 @media (max-width: 900px) {
   button {
     font-size: 1.75rem;
-    height: 45px;
-    width: 45px;
+    height: 43px;
+    margin: 3px 2px;
+    width: 43px;
   }
 
   .special-btn {
-    width: 90px;
+    width: 60px;
   }
 }
 
@@ -106,21 +107,21 @@ button:hover {
   }
 
   .special-btn {
-    width: 80px;
+    width: 50px;
   }
 }
 
 @media (max-width: 700px) {
   button {
     font-size: 1rem;
-    height: 33px;
-    margin: 2px;
+    height: 31px;
+    margin: 2px 1px;
     width: 33px;
   }
 
   .special-btn {
     font-size: 0.75rem;
-    width: 66px;
+    width: 45px;
   }
 }
 
@@ -128,12 +129,7 @@ button:hover {
   button {
     font-size: 0.85rem;
     height: 31px;
-    margin: 1px;
+    margin: 2px 1px;
     width: 31px;
-  }
-
-  .special-btn {
-    font-size: 0.5rem;
-    width: 45px;
   }
 }
