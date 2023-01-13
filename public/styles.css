@@ -125,11 +125,3 @@ button:hover {
   }
 }
 
-@media (max-width: 650px) {
-  button {
-    font-size: 0.85rem;
-    height: 31px;
-    margin: 2px 1px;
-    width: 31px;
-  }
-}
